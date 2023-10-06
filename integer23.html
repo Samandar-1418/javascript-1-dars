@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style> 
+    a {
+        font-size: 28px;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        color: aqua;
+    }
+    a:hover{
+        transition: all ease-in;
+        transform: translate(1.1px,1.1px);
+        color: rgb(49, 193, 193);
+    }
+    </style>
 </head>
 <body>
     <script>
        let a = prompt ("sekund kiriting"); 
         let m = Math.floor ((a/60));
         let s = Math.floor ((a/60)%60);
-        let c = Math.floor (a/3600)
+        let c = Math.floor (a/3600);
         document.write ( c +"soat" + " " + m + "minut" + " "+ s + "secund" ) 
     </script>
 </body>
